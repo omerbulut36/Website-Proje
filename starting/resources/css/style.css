@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f5f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+}
+
+.hero {
+    text-align: center;
+    background-image: url('../image/italian_header.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 40px;
+}
+
+.hero h1{
+    font-size: 28px;
+    color: #e57e45; 
+    font-family: Montserrat, sans-serif;
+}
+
+.hero p{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Lato, sans-serif;
+}
+
+
+/* Sticky reservation button */
+
+.sticky-wrapper {
+    position: relative;
+}
+    
+.sticky-button {
+    position: sticky;
+    top: 50px;
+    right: 20px;
+    margin-left: auto;
+    background-color: #e57e45;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 1000;
+    width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.sticky-button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.sticky-button a:hover {
+    text-decoration: underline;
+}
+
+
+.sticky-button:hover {
+    background-color: #c55d34;
+}
+
+
+
+.nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.nav a:hover{
+    color: #fff;
+    background-color: #e0b083;
+    transform: scale(1.15);
+}
+
+/* Section Background Colors */
+
+.section{
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.section h2{
+    color: #e57e45;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section p{
+    text-align: justify;
+}
+
+#about {
+    background-color: #fbf6e9;
+}
+
+#gallery {
+    background-color: #f0f4f7;
+}
+
+#menu {
+    background-color: #fbf6e9;
+}
+
+#reservations {
+    background-color: #f0f4f7;
+}
+
+
+#summary {
+    background-color: #fbf6e9;
+}
+
+#contact {
+    background-image: url('../image/italian_footer.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    height: 120px;
+    text-align: center; 
+}
+
+#contact p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gallery-flex img{
+    margin: 10px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+.gallery-flex img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.gallery-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+.menu-filter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.menu-filter button {
+    padding: 10px 20px; 
+    margin: 1px; 
+    background-color: #e57e45; 
+    color: #fff; 
+    cursor: pointer; 
+}
+
+.menu-filter button:hover {
+    background-color: #c55d34; 
+}
+
+
+
+.plus-sign {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #e57e45;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.menu-item:hover .plus-sign {
+    opacity: 1;
+    visibility: visible;
+    color: #c55d34;
+    transform: scale(1.2);
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    
+    gap: 30px;
+}
+
+
+.menu-item {
+    background-color: #fcfcd8;
+    padding: 15px;
+    border-radius: 8px;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    overflow: hidden; 
+}
+
+
+
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    margin-top: 10px;
+    color: #e57e45;
+}
+
+.menu-item h6 {
+    color: #e2b69e;
+}
+
+.menu-item:hover {
+    transform: scale(1.10);
+    transition: transform 0.5s ease;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+.dish-details {
+    font-size: 10px;
+    color: #e9967a;
+    font-family: 'Sixtyfour Convergence';
+    margin-top: 10px;
+    display: none; 
+}
+
+
+.dish-details p{
+    margin:10px;
+    text-align: left;
+}
+
+
+
+#reservations{
+    text-align: center;
+	margin: 0 auto;
+}
+
+#reservations p{
+    text-align: center;
+}
+
+
+#reservations p{
+    text-align: center;
+}
+
+
+
+
+#reservations form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px 20px;
+    background-color: #ffffff;
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#reservations label {
+    text-align: right;
+    font-weight: bold;
+    color: #555;
+    margin: 0;
+}
+
+
+#reservations input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+}
+
+
+
+
+#reservations button {
+    padding: 12px;
+    margin: 12px auto;
+    background-color: #e57e45;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;    
+    cursor: pointer;
+    width: 80%;
+    grid-column: span 2;
+    justify-self: center;
+}
+
+
+#reservations button:hover {
+    background-color: #c55d34;
+    transform: scale(1.15);
+}
+
+
+/* Add the confirmation message styling */
+
+#confirmation-message {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+
+/* Summary Table Styles */
+
+#summary table{
+    margin: 0 auto;
+    width: 70%;
+}
+
+#summary th, #summary td, #summary table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 8px 10px;
+    font-size: 18px;
+    text-align: left;
+    font-family: Consolas;
+}
+
+#summary thead th {
+    background-color: #e57e45;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#summary tbody tr{
+    background-color: #ffd698;
+}
+
+
+#summary tbody tr:hover {
+    background-color:  #f5e9d7;
+}
+
+#summary table caption {
+    caption-side: bottom;
+    font-size: 1em;
+    font-style: italic;
+    font-family: Consolas;
+}
+

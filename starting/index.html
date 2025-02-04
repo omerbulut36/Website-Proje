@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Italian Restaurant</title>
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Home Section -->
+        <div class="hero">
+            <h1>Welcome to Our Restaurant</h1>
+            <p>Your culinary journey starts here!</p>
+        </div>
+
+
+        <div class="sticky-wrapper">
+            <div id="sticky-reservation" class="sticky-button">
+                <a href="#reservations">Make a Reservation</a>
+            </div>
+
+
+            <!-- Navigation Bar -->
+            <div class="nav">
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#menu">Menu</a>
+                <a href="#reservations">Reservations</a>
+                <a href="#summary"> Summary Table</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <!-- About Section -->
+            <div id="about" class="section">
+                <h2>About Our Restaurant</h2>
+                <p>Our restaurant was founded in 1998 with a passion for authentic flavors and a philosophy of using only the freshest ingredients. We believe that every meal should be an experience, and our dishes are inspired by culinary traditions passed down through generations. Join us in celebrating good food and great company!</p>
+            </div>
+
+            <!-- Gallery Section -->
+            <div id="gallery" class="section">
+                <h2>Gallery</h2>
+                <div class="gallery-flex">
+                    <img src="./resources/image/restaurant_01.png" alt="Restaurant">
+                    <img src="./resources/image/restaurant_02.png" alt="Restaurant">
+                    <img src="./resources/image/restaurant_03.png" alt="Restaurant">
+                    <img src="./resources/image/restaurant_04.png" alt="Restaurant">
+                    <img src="./resources/image/restaurant_05.png" alt="Restaurant">
+                    <img src="./resources/image/restaurant_06.png" alt="Restaurant">
+                    <img src="./resources/image/restaurant_07.png" alt="Restaurant">
+                </div>
+            </div>
+            
+            <!-- Menu Section -->
+            <div id="menu" class="section">
+                <h2>Menu</h2>
+				
+				
+				
+				<div class="menu-filter">
+                    <button class="filter-btn" data-category="all">All</button>
+                    <button class="filter-btn" data-category="appetizers">Appetizers</button>
+                    <button class="filter-btn" data-category="mains">Main Dishes</button>
+                    <button class="filter-btn" data-category="desserts">Desserts</button>
+                </div>
+				
+				
+				
+				
+                <div class="menu-items">
+					<!-- Appetizers -->
+					
+                    <div class="menu-item appetizers" data-category="appetizers">
+                        <img src="./resources/image/bruschetta.png" alt="Bruschetta">
+                        <h3>Bruschetta</h3>
+                        <h6>Appetizer</h6>
+                        <p class="price">$8</p>
+                        <span class="plus-sign">+</span>
+                        <div class="dish-details">
+                            <p>Service Time: 10 minutes</p>
+                            <p>Ingredients: Bread, garlic, tomatoes, basil, olive oil</p>
+                            <p>Fun Fact: Bruschetta dates back to Ancient Rome!</p>
+                        </div>
+                    </div>
+					
+                    <div class="menu-item appetizers" data-category="appetizers">
+                        <img src="./resources/image/garlic_bread.png" alt="Garlic Bread">
+                        <h3>Garlic Bread</h3>
+                        <h6>Appetizer</h6>
+                        <p class="price">$6</p>
+                        <span class="plus-sign">+</span>
+                        <div class="dish-details">
+                            <p>Service Time: 8 minutes</p>
+                            <p>Ingredients: Bread, garlic, butter, parsley</p>
+                            <p>Fun Fact: Garlic bread is derived from the Italian bruschetta!</p>
+                        </div>
+                    </div>
+					
+                    <div class="menu-item appetizers" data-category="appetizers">
+                        <img src="./resources/image/caprese_salad.png" alt="Caprese Salad">
+                        <h3>Caprese Salad</h3>
+                        <h6>Appetizer</h6>
+                        <p class="price">$9</p>
+                        <span class="plus-sign">+</span>
+                        <div class="dish-details">
+                            <p>Service Time: 5 minutes</p>
+                            <p>Ingredients: Tomatoes, mozzarella, basil, balsamic vinegar</p>
+                            <p>Fun Fact: Named after the island of Capri, Italy.</p>
+                        </div>
+                    </div>
+					
+                    <div class="menu-item appetizers" data-category="appetizers">
+                        <img src="./resources/image/spring_rolls.png" alt="Spring Rolls">
+                        <h3>Spring Rolls</h3>
+                        <h6>Appetizer</h6>
+                        <p class="price">$7</p>
+                        <span class="plus-sign">+</span>
+                        <div class="dish-details">
+                            <p>Service Time: 12 minutes</p>
+                            <p>Ingredients: Rice paper, vegetables, shrimp, dipping sauce</p>
+                            <p>Fun Fact: Spring rolls are a traditional appetizer in East Asia!</p>
+                        </div>
+                    </div>
+					
+                    <div class="menu-item appetizers" data-category="appetizers">
+                        <img src="./resources/image/stuffed_mushrooms.png" alt="Stuffed Mushrooms">
+                        <h3>Stuffed Mushrooms</h3>
+                        <h6>Appetizer</h6>
+                        <p class="price">$10</p>
+                        <span class="plus-sign">+</span>
+                        <div class="dish-details">
+                            <p>Service Time: 15 minutes</p>
+                            <p>Ingredients: Mushrooms, garlic, cheese, herbs</p>
+                            <p>Fun Fact: This appetizer is a popular party snack!</p>                       
+                        </div>
+                    </div>
+					
+                    <div class="menu-item appetizers" data-category="appetizers">
+                        <img src="./resources/image/crab_cakes.png" alt="Crab Cakes">
+                        <h3>Crab Cakes</h3>
+                        <h6>Appetizer</h6>
+                        <p class="price">$12</p>
+                        <span class="plus-sign">+</span>
+                        <div class="dish-details">
+                            <p>Service Time: 15 minutes</p>
+                            <p>Ingredients: Crab meat, breadcrumbs, mayonnaise, spices</p>
+                            <p>Fun Fact: Crab cakes are a specialty in Maryland, USA!</p>                       
+                        </div>
+                    </div>
+                    
+                    <!-- Main Dishes (6 Items) -->
+					
+                    <div class="menu-item mains" data-category="mains">
+                        <img src="./resources/image/spaghetti_carbonara.png" alt="Spaghetti Carbonara">
+                        <h3>Spaghetti Carbonara</h3>
+                        <h6>Main Dish</h6>
+                        <p class="price">$12</p>
+                        <span class="plus-sign">+</span>
+                        <div class="dish-details">
+                            <p>Service Time: 20 minutes</p>
+                            <p>Ingredients: Spaghetti, eggs, pancetta, Parmesan, black pepper</p>
+                            <p>Fun Fact: Carbonara originated in mid-20th-century Italy.</p>                      
+                        </div>
+                    </div>
+					
+                    <div class="menu-item mains" data-category="mains">
+                        <img src="./resources/image/lasagna.png" alt="Lasagna">
+                        <h3>Lasagna</h3>
+                        <h6>Main Dish</h6>
+                        <p class="price">$14</p>
+                        <span class="plus-sign">+</span>
+                        <div class="dish-details">
+                            <p>Service Time: 25 minutes</p>
+                            <p>Ingredients: Pasta sheets, beef, ricotta, mozzarella, marinara</p>
+                            <p>Fun Fact: Lasagna is believed to be one of the oldest pasta dishes.</p>        
+                        </div>
+                    </div>
+					
+                    <div class="menu-item mains" data-category="mains">
+                        <img src="./resources/image/margherita_pizza.png" alt="Margherita Pizza">
+                        <h3>Margherita Pizza</h3>
+                        <h6>Main Dish</h6>
+                        <p class="price">$11</p>
+                        <span class="plus-sign">+</span>
+                        <div class="dish-details">
+                            <p>Service Time: 15 minutes</p>
+                            <p>Ingredients: Dough, tomatoes, mozzarella, basil</p>
+                            <p>Fun Fact: The pizza is named after Queen Margherita of Italy.</p>                       
+                        </div>
+                    </div>
+					
+                    <div class="menu-item mains" data-category="mains">
+                        <img src="./resources/image/beef_stew.png" alt="Beef Stew">
+                        <h3>Beef Stew</h3>
+                        <h6>Main Dish</h6>
+                        <p class="price">$18</p>
+                        <span class="plus-sign">+</span>
+                        <div class="dish-details">
+                            <p>Service Time: 40 minutes</p>
+                            <p>Ingredients: Beef, carrots, potatoes, onions, broth</p>
+                            <p>Fun Fact: Beef stew is a classic comfort dish in many cultures!</p>                        
+                        </div>
+                    </div>
+					
+                    <div class="menu-item mains" data-category="mains">
+                        <img src="./resources/image/chicken_parmesan.png" alt="Chicken Parmesan">
+                        <h3>Chicken Parmesan</h3>
+                        <h6>Main Dish</h6>
+                        <p class="price">$16</p>
+                        <span class="plus-sign">+</span>
+                        <div class="dish-details">
+                            <p>Service Time: 30 minutes</p>
+                            <p>Ingredients: Chicken breast, marinara sauce, mozzarella, Parmesan</p>
+                            <p>Fun Fact: Chicken Parmesan is a popular Italian-American dish!</p>                        
+                        </div>
+                    </div>
+					
+                    <div class="menu-item mains" data-category="mains">
+                        <img src="./resources/image/grilled_salmon.png" alt="Grilled Salmon">
+                        <h3>Grilled Salmon</h3>
+                        <h6>Main Dish</h6>
+                        <p class="price">$20</p>
+                        <span class="plus-sign">+</span>
+                        <div class="dish-details">
+                            <p>Service Time: 25 minutes</p>
+                            <p>Ingredients: Salmon, lemon, garlic, dill, olive oil</p>
+                            <p>Fun Fact: Salmon is a popular dish in many coastal cultures!</p>                       
+                        </div>
+                    </div>
+                    <!-- Desserts (6 Items) -->
+					
+                    <div class="menu-item desserts" data-category="desserts">
+                        <img src="./resources/image/tiramisu.png" alt="Tiramisu">
+                        <h3>Tiramisu</h3>
+                        <h6>Dessert</h6>
+                        <p class="price">$8</p>
+                        <span class="plus-sign">+</span>
+                        <div class="dish-details">
+                            <p>Service Time: 30 minutes</p>
+                            <p>Ingredients: Coffee, mascarpone, eggs, sugar, cocoa powder</p>
+                            <p>Fun Fact: Tiramisu means "pick me up" in Italian!</p>                      
+                        </div>
+                    </div>
+					
+                    <div class="menu-item desserts" data-category="desserts">
+                        <img src="./resources/image/cheesecake.png" alt="Cheesecake">
+                        <h3>Cheesecake</h3>
+                        <h6>Dessert</h6>
+                        <p class="price">$9</p>
+                        <span class="plus-sign">+</span>
+                        <div class="dish-details">
+                            <p>Service Time: 35 minutes</p>
+                            <p>Ingredients: Cream cheese, sugar, graham crackers, vanilla</p>
+                            <p>Fun Fact: Cheesecake has roots in Ancient Greece!</p>                      
+                        </div>
+                    </div>
+					
+                    <div class="menu-item desserts" data-category="desserts">
+                        <img src="./resources/image/gelato.png" alt="Gelato">
+                        <h3>Gelato</h3>
+                        <h6>Dessert</h6>
+                        <p class="price">$7</p>
+                        <span class="plus-sign">+</span>
+                        <div class="dish-details">
+                            <p>Service Time: 5 minutes</p>
+                            <p>Ingredients: Milk, sugar, flavoring</p>
+                            <p>Fun Fact: Gelato has less air and more flavor than ice cream!</p>                
+                        </div>
+                    </div>
+					
+                    <div class="menu-item desserts" data-category="desserts">
+                        <img src="./resources/image/chocolate_mousse.png" alt="Chocolate Mousse">
+                        <h3>Chocolate Mousse</h3>
+                        <h6>Dessert</h6>
+                        <p class="price">$8</p>
+                        <span class="plus-sign">+</span>
+                        <div class="dish-details">
+                            <p>Service Time: 20 minutes</p>
+                            <p>Ingredients: Chocolate, cream, eggs</p>
+                            <p>Fun Fact: Mousse means "foam" in French!</p>               
+                        </div>
+                    </div>
+					
+                    <div class="menu-item desserts" data-category="desserts">
+                        <img src="./resources/image/panna_cotta.png" alt="Panna Cotta">
+                        <h3>Panna Cotta</h3>
+                        <h6>Dessert</h6>
+                        <p class="price">$9</p>
+                        <span class="plus-sign">+</span>
+                        <div class="dish-details">
+                            <p>Service Time: 20 minutes</p>
+                            <p>Ingredients: Cream, sugar, vanilla, gelatin</p>
+                            <p>Fun Fact: Panna Cotta is a traditional Italian dessert!</p>                       
+                        </div>
+                    </div>
+					
+                    <div class="menu-item desserts" data-category="desserts">
+                        <img src="./resources/image/creme_brulee.png" alt="Crème Brûlée">
+                        <h3>Crème Brûlée</h3>
+                        <h6>Dessert</h6>
+                        <p class="price">$10</p>
+                        <span class="plus-sign">+</span>
+                        <div class="dish-details">
+                            <p>Service Time: 30 minutes</p>
+                            <p>Ingredients: Cream, vanilla, sugar, egg yolks</p>
+                            <p>Fun Fact: The top layer of a Crème Brûlée is caramelized!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Reservations Section -->
+<div id='reservations' class="section">
+    <h2>Reserve a Table</h2>
+    <form id="reservation-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Your name" required>
+      
+        <label for="date">Reservation Date</label>
+        <input type="date" id="date" required>
+      
+        <label for="people">Number of People</label>
+        <input type="number" id="people" min="1" required>
+      
+        <button type="submit">Reserve Now</button>
+      </form>
+      <div id="confirmation-message"></div>
+      
+</div>
+        <!-- Summary Table Section -->
+        <div id="summary" class="section">
+            <h2>Summary Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dish</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Appetizers -->
+                    <tr>
+                        <td>Bruschetta</td>
+                        <td>Appetizer</td>
+                        <td>$8</td>
+                    </tr>
+                    <tr>
+                        <td>Garlic Bread</td>
+                        <td>Appetizer</td>
+                        <td>$6</td>
+                    </tr>
+                    <tr>
+                        <td>Caprese Salad</td>
+                        <td>Appetizer</td>
+                        <td>$9</td>
+                    </tr>
+                    <tr>
+                        <td>Spring Rolls</td>
+                        <td>Appetizer</td>
+                        <td>$7</td>
+                    </tr>
+                    <tr>
+                        <td>Stuffed Mushrooms</td>
+                        <td>Appetizer</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr>
+                        <td>Crab Cakes</td>
+                        <td>Appetizer</td>
+                        <td>$12</td>
+                    </tr>
+
+                    <!-- Main Dishes -->
+                    <tr>
+                        <td>Spaghetti Carbonara</td>
+                        <td>Main Dish</td>
+                        <td>$12</td>
+                    </tr>
+                    <tr>
+                        <td>Lasagna</td>
+                        <td>Main Dish</td>
+                        <td>$14</td>
+                    </tr>
+                    <tr>
+                        <td>Margherita Pizza</td>
+                        <td>Main Dish</td>
+                        <td>$11</td>
+                    </tr>
+                    <tr>
+                        <td>Beef Stew</td>
+                        <td>Main Dish</td>
+                        <td>$18</td>
+                    </tr>
+                    <tr>
+                        <td>Chicken Parmesan</td>
+                        <td>Main Dish</td>
+                        <td>$16</td>
+                    </tr>
+                    <tr>
+                        <td>Grilled Salmon</td>
+                        <td>Main Dish</td>
+                        <td>$20</td>
+                    </tr>
+
+                    <!-- Desserts -->
+                    <tr>
+                        <td>Tiramisu</td>
+                        <td>Dessert</td>
+                        <td>$8</td>
+                    </tr>
+                    <tr>
+                        <td>Cheesecake</td>
+                        <td>Dessert</td>
+                        <td>$9</td>
+                    </tr>
+                    <tr>
+                        <td>Gelato</td>
+                        <td>Dessert</td>
+                        <td>$7</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate Mousse</td>
+                        <td>Dessert</td>
+                        <td>$8</td>
+                    </tr>
+                    <tr>
+                        <td>Panna Cotta</td>
+                        <td>Dessert</td>
+                        <td>$9</td>
+                    </tr>
+                    <tr>
+                        <td>Crème Brûlée</td>
+                        <td>Dessert</td>
+                        <td>$10</td>
+                    </tr>
+                </tbody>
+                <caption>Summary Table for the menu</caption>
+            </table>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>Email: info@restaurant.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </div>    
+	
+    <script src="js/script.js"></script>
+</body>
+</html>
